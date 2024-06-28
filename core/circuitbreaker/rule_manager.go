@@ -472,3 +472,7 @@ func IsValidRule(r *Rule) error {
 	}
 	return nil
 }
+
+func GetAllCurrentCircuitBreaker() map[string][]CircuitBreaker {
+	return breakers
+}

@@ -108,7 +108,8 @@ func (r *Rule) isEqualsToBase(newRule *Rule) bool {
 		return false
 	}
 	return r.Resource == newRule.Resource && r.Strategy == newRule.Strategy && r.RetryTimeoutMs == newRule.RetryTimeoutMs &&
-		r.MinRequestAmount == newRule.MinRequestAmount && r.StatIntervalMs == newRule.StatIntervalMs && r.StatSlidingWindowBucketCount == newRule.StatSlidingWindowBucketCount
+		r.MinRequestAmount == newRule.MinRequestAmount && r.StatIntervalMs == newRule.StatIntervalMs && r.StatSlidingWindowBucketCount == newRule.StatSlidingWindowBucketCount &&
+		r.ProbeNum == newRule.ProbeNum
 }
 
 func (r *Rule) isEqualsTo(newRule *Rule) bool {
